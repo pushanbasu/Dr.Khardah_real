@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Khardah: No Match found</title>
+</head>
+<body style="background-color:rgb(160,164,147)">
+<h5>* NOTE: Schedules may vary due to COVID 19 pandemic . Please contact the clinic for confirming appointment availability. </h5>
+{% if n == 0 %}
+<br><br>
+<p style="text-align:center"><h2><b> Sorry. No Doctor found for the combination of given specialization and day.</b></h2></p>
+<br><br><br>
+<p><h4><u>However, the following Entries matches '{{ s }}' specialization  but  may be for some OTHER day: </u> </h4></p>
+<br>
+{% for i in suggestions %}
+<h5>Name : {{ i.name}} </h5>
+<h5>Degree : {{i.degree}} </h5>
+<h5>Clinic / Chamber : {{i.venue}} </h5>
+<h5>Contact : {{i.contact_clinic}} </h5>
+<h5>----------------------$-~$-~$-~$-~$-~$-~$-~$-~$-~$-~$------------------------</h5>
+{% endfor %}
+
+{% endif %}
+</body>
+</html>

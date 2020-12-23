@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Khardah : Specialization only </title>
+</head>
+<body style="background-color: rgb(250,126,265)">
+<h5>* NOTE: Schedules may vary due to COVID 19 pandemic . Please contact the clinic for confirming appointment availability. </h5>
+<h3><big><u>Your desired '{{s}}' Specialization matches the following :</u> </big></h3>
+<br> <br>
+{% for i in anyday %}
+<h5>Name: {{i.name}}</h5>
+<h5>Degree: {{i.degree}}</h5>
+<h5>Clinic / Chamber: {{i.venue}}</h5>
+<h5>Contact: {{i.contact_clinic}}</h5>
+<h4>------------------~- $ ~-$ ~-$ ~-$ ~-$ ~-$ ~-$ ~----------------</h4>
+
+<br>
+{% endfor %}
+</body>
+</html>

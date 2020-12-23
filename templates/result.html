@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta lang="en">
+<html>
+
+<head>
+    <title>Dr. Khardah: Search Result</title>
+    <header><h5><b>* <u>Please Contact your preferred clinic / chamber for an appointment and/or for the confirmation of the Schedule as they may get adjusted sometimes.</u></b></h5></header>
+</head>
+<body style="background-color:rgb(190,515,350)">
+<h5>* NOTE: Schedules may vary due to COVID 19 pandemic . Please contact the clinic for confirming appointment availability. </h5>
+<br>
+<p><h2 ><big> As per your search, We found: </big></h2></p>
+<h3>------------------------------------------------------------</h3>
+
+
+{% for i in result %}
+
+<h5>Name: {{i.name}}</h5>
+<h5>Degree: {{i.degree}}</h5>
+<h5>Clinic / Chamber: {{i.venue}}</h5>
+<h5>Time: {{i.time}}</h5>
+<h5>Contact: {{i.contact_clinic}}</h5>
+
+<h4>------------------~- $ ~-$ ~-$ ~-$ ~-$ ~-$ ~-$ ~----------------</h4>
+
+<br>
+{% endfor %}
+
+</body>
+</html>
